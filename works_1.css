@@ -1,0 +1,107 @@
+body{
+  background-color:lightgrey;
+  margin: 15px;
+  display: block;
+  font-size: 15pt;
+  font-family: source-sans-pro, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  }
+
+a:link {
+  color : black;
+}
+a:visited {
+  color : black;
+}
+a:hover {
+  color : blue;
+}
+a:active {
+  color : blue;
+}
+
+h1{
+  display: inline-block;
+  font-size: 15pt;
+  font-family: source-sans-pro, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  margin-top: 0px;
+  margin-right: 25px;
+  color:black;
+
+}
+
+ul{
+  list-style: none;
+  padding-left: 0px;
+}
+
+
+p{
+  display: absolute;
+}
+
+main {
+  overflow-x: hidden;
+  display: flex;
+}
+
+.row{
+    display: none;
+}
+
+.row.active{
+    display: block;
+}
+
+section {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*
+  transform: translate(0,-20%);
+  display: inline;
+  */
+}
+
+section:nth-child(even) {
+  background-color: grey;
+
+}
+
+div{
+  margin-top: 15px;
+}
+
+
+.project-list {
+  color:  black;
+  display: inline-block;
+}
+
+.project-name {
+  width: 250px;
+  padding-right: 80px;
+}
+
+.project-year {
+  width: 100px;
+  padding-right: 40px;
+}
+
+img{
+  width:70%;
+  margin:auto;
+
+}
+
+p{
+  display: inline-block;
+  width: 45%;
+  margin-top: 0px;
+  font-size: 13pt;
+}

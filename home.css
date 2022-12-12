@@ -1,0 +1,145 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body{
+  background-color:lightgrey;
+  margin: 15px;
+  line-height: 140%;
+  font-family: Times, serif;
+  font-weight: 100;
+  font-size: 15pt;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: serif;
+  unicode-range: U+AC00-U+D7A3;
+}
+
+a:link {
+  color : black;
+  text-decoration: none;
+}
+a:visited {
+  color : black;
+  text-decoration: none;
+}
+a:hover {
+  color : blue;
+}
+a:active {
+  color : blue;
+}
+
+h1{
+  display: inline-block;
+  font-family: Times;
+  font-weight: 100;
+  font-size: 15pt;
+  font-style: italic;
+  margin-top: 0px;
+  margin-right: 25px;
+  color:white;
+}
+
+div{
+  display: block;
+  font-size: 15pt;
+  font-family: Times, serif;
+  font-weight: 100;
+  font-style: italic;
+  margin-top: 30px;
+}
+
+.description{
+  width: 30%;
+}
+
+.korean{
+  font-size: 12.5pt;
+  line-height: 20pt;
+  font-weight: bold;
+}
+
+/*.korean{
+  font-family: serif;
+  font-size: 12pt;
+  line-height: 20pt;
+  font-weight: bold;
+  margin-top:10px;
+  font-style: oblique;
+}
+
+
+#english{
+  font-size: 15pt;
+  font-family: Times;
+  font-weight: 100;
+  font-style: italic;
+}
+*/
+
+@media only screen and (max-width: 600px) {
+  .description {
+	width: 100%;
+	}
+  }
+
+#underline{
+  text-decoration: underline;
+}
+
+* {
+  margin: 0px;
+  padding:  0px;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  position: fixed;
+width:20%;
+transform: translateZ(-20px);
+}
+
+img.big {
+  width:20%;
+}
+
+img.med {
+  width:15%;
+}
+
+ul{
+  list-style: none;
+  padding-left: 0px;
+}
+
+/*---work page---*/
+
+.wholelist{
+  transform: translateY(70px);
+}
+
+div{
+  margin-top: 15px;
+}
+
+
+.project-list {
+  color:  black;
+  display: inline-block;
+}
+
+.project-name {
+  width: 250px;
+  padding-right: 30px;
+}
+
+.project-year {
+  width: 100px;
+  padding-right: 10px;
+}

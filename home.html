@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>HWANGBOYOUNG</title>
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <link rel="stylesheet" href="https://use.typekit.net/xuq8yti.css">
+    <link rel="stylesheet" href="https://use.typekit.net/xuq8yti.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+  	<script>
+  	$(document).ready(function(){
+
+  		// store height and width of the window as variables
+  		var width = $(window).width();
+  		var height = $(window).height();
+
+
+
+  		// function to get random number between a range of 2 numbers
+  		function randomIntFromInterval(min, max) { // min and max included
+  			return Math.floor(Math.random() * (max - min + 1) + min)
+  		}
+
+  		// do this code for each image on the page
+  		$('img').each(function () {
+
+  			// get a random height within the height of the window
+  			var rndTop = randomIntFromInterval(1, height)
+        if(rndTop > 300){
+          rndTop = rndTop - 300;
+        }
+
+  			// get a random width within the width of the window
+  			var rndLeft = randomIntFromInterval(1, width)
+        if(rndLeft > 300){
+          rndLeft = rndLeft - 300;
+        }
+
+
+  			// set the position of the current image
+  			$(this).css({
+  				'top': rndTop+'px',
+  				'left': rndLeft+'px'
+  			})
+  		});
+
+
+  	});
+  	</script>
+
+  </head>
+  <body>
+    <h1><a href="home.html">Hwang Boyoung</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="works.html">works</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="info.html">info</a></h1>
+
+
+
+    <img src="_images/pf_100dtf_img0002.png" class="big" />
+  	<img src="_images/pf_mpc_img0001.png" class="med" />
+  	<img src="_images/pf_mpc_img0002.png" class="med" />
+  	<img src="_images/pf_mpc_img0003.png" class="med" />
+    <img src="_images/pf_mpc_img0004.png" class="med" />
+
+  </body>
+</html>
